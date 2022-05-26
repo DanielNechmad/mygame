@@ -12,10 +12,14 @@
   font-variant: normal;
   text-transform: none;
 }
+.rest {
+  margin: 20px 0;
+  cursor: pointer;
+}
 
 button {
   cursor: pointer;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 table {
@@ -38,14 +42,28 @@ body {
 .cell {
   width: 50px;
   height: 50px;
-  color: rgb(66, 22, 189);
+  color: rgb(55, 12, 174);
   cursor: pointer;
   border: 1px solid #ccc;
   background-color: #eee;
   transition-duration: 1s;
 }
+.red {
+  background-color: red;
+}
+.mark {
+  width: 50px;
+  height: 50px;
+  color: rgb(66, 22, 189);
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: rgb(23, 255, 178);
+}
 
 .cell:hover {
   cursor: pointer;
   background-color: rgb(184, 48, 226);
+}
+.timer-span {
+  color: lightgreen;
 }
