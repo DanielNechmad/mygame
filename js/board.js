@@ -14,7 +14,6 @@ function buildMat(size) {
   }
   return board;
 }
-
 function renderBoard(board, selector) {
   //Render the board as a <table> to the page
   var strHTML = `<table border="1"><tbody>`;
@@ -61,6 +60,7 @@ function countMineNegs(cellI, cellJ) {
     for (var j = cellJ - 1; j <= cellJ + 1; j++) {
       if (j < 0 || j >= gBoard[0].length) continue;
       if (i === cellI && j === cellJ) continue;
+
       if (gBoard[i][j].isMine) negsCount++;
     }
   }
